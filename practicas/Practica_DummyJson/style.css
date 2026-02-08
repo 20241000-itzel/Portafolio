@@ -1,0 +1,180 @@
+body{
+    font-family: sans-serif;
+    background-color: #fde2e4;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20px;
+}
+
+#buscador{
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 20px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(255, 105, 180, 0.35);
+}
+
+.img-box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #e6397f;
+    margin: 5px 0;
+}
+
+.categoria{
+    font-size: 14px;
+    color: gray;
+
+}
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e6397f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #d6286c;
+}
+
+
+
+#detalle {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+#detalle img {
+    width: 350px;
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.detalle-info {
+    flex: 1;
+    text-align: left;
+}
+
+
+#detalle h2 {
+    margin-top: 0;
+    color: #c2185b;
+}
+
+
+#detalle p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+#detalle p strong {
+    color: #ad1457;
+}
+
+
+#detalle h3 {
+    margin-top: 25px;
+    color: #880e4f;
+}
+
+#comentarios {
+    padding-left: 20px;
+}
+
+#comentarios li {
+    margin-bottom: 10px;
+    background-color: #fde4ec;
+    padding: 10px;
+    border-radius: 8px;
+    list-style: none;
+}
+
+
+a {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color: #ad1457;
+    font-weight: bold;
+}
+
+header {
+    position: relative;
+    padding: 25px;
+}
+
+.nav-top {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.inicio {
+    text-decoration: none;
+    font-size: 14px;
+    color: #8a5f6f;
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1.5px solid #d6b3c2;
+    background: rgba(255,255,255,0.85);
+}
+
+.inicio:hover {
+    background: #f3e8ec;
+}
+

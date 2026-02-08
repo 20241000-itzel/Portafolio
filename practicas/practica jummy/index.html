@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="nav-top">
+        <a href="/index.html" class="inicio">Inicio</a>
+        <a href="/index.html#practicas" class="inicio">Prácticas</a>
+        <a href="/index.html#acerca" class="inicio">Acerca de</a>
+    </div>
+</header>
+
+<h1>Panel de Administración - Productos</h1>
+
+<button onclick="window.location.href='crear.html'">
+    Nuevo producto
+</button>
+
+<br><br>
+
+<input type="text" id="buscador" placeholder="Buscar producto">
+<button onclick="buscarProducto()">Buscar</button>
+
+<select id="selectCategoria" onchange="filtrarCategoria()"></select>
+
+<div id="productos" class="contenedor"></div>
+
+<div class="paginacion">
+    <button onclick="anterior()">Anterior</button>
+    <span id="infoPagina"></span>
+    <button onclick="siguiente()">Siguiente</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
