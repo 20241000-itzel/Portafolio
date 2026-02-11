@@ -1,0 +1,136 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GENERAL */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #fdf2f8, #f8e8ef);
+    color: #374151;
+    padding: 30px;
+}
+
+/* TITULO PRINCIPAL */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3f3f46;
+    letter-spacing: 1px;
+}
+
+/* PERFIL */
+#perfil {
+    background: white;
+    max-width: 720px;
+    margin: 0 auto 45px auto;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+#avatar {
+    width: 165px;
+    border-radius: 50%;
+    border: 4px solid #f4c2d7;
+    margin-bottom: 15px;
+}
+
+#nombre {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #2d2a32;
+}
+
+#bio {
+    font-style: italic;
+    margin-bottom: 8px;
+    color: #6b5563;
+}
+
+#ubicacion {
+    color: #8b7280;
+}
+
+/* SECCIONES */
+section {
+    max-width: 950px;
+    margin: 0 auto 45px auto;
+}
+
+/* TITULOS DE SECCIÓN */
+section h2 {
+    margin-bottom: 25px;
+    padding-left: 14px;
+    border-left: 6px solid #e8a3c4;
+    color: #3f3f46;
+}
+
+/* PROYECTOS */
+#repos {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+#repos li {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#repos li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+#repos a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #b4538b;
+}
+
+#repos a:hover {
+    text-decoration: underline;
+}
+
+/* COMUNIDAD */
+#followers {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+}
+
+#followers img {
+    width: 58px;
+    border-radius: 50%;
+    border: 3px solid #f1b5cf;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#followers img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 15px rgba(180,83,139,0.35);
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    body {
+        padding: 18px;
+    }
+
+    #perfil {
+        padding: 22px;
+    }
+}

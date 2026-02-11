@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar nuevo producto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Alta de nuevos productos</h1>
+
+<a href="index.html" class="btn-volver">Volver</a>
+
+<br><br>
+<div class="form-group">
+    <label>Nombre del producto:</label>
+    <input type="text" id="titulo">
+</div>
+
+<div class="form-group">
+    <label>Precio:</label>
+    <input type="number" id="precio">
+</div>
+
+<div class="form-group">
+    <label>Categoría:</label>
+    <select id="categoria"></select>
+</div>
+
+<div class="form-group">
+    <label>Descripción:</label>
+    <textarea id="descripcion"></textarea>
+</div>
+
+<br><br>
+<button onclick="guardarProducto()">Guardar producto</button>
+
+<div id="mensaje-exito"></div>
+
+<script src="crear.js"></script>
+</body>
+</html>
